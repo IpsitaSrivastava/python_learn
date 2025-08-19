@@ -24,4 +24,4 @@ is_verified= False
 
 print ((is_admin or is_moderator) and ((not is_banned) or is_verified))
 
-print ("goodbye")
+print ("morning")
