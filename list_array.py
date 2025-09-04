@@ -15,5 +15,4 @@ minVal = mylist[0]
 for i in mylist:
     if i<minVal:
         minVal=i
-
 print("Lowest Value Is: ", minVal)
