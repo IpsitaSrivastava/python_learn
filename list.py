@@ -25,3 +25,36 @@ print(thislist)
 thislist = ["banana", "Orange", "Kiwi", "cherry"]
 thislist.reverse()
 print(thislist)
+
+if __name__ == '__main__':
+    N = int(input())       # number of commands
+    mylist = []            # start with empty list
+    
+    for _ in range(N):
+        command = input().split()
+        operation = command[0]
+        
+        if operation == "insert":
+            i = int(command[1])
+            e = int(command[2])
+            mylist.insert(i, e)
+            
+        elif operation == "print":
+            print(mylist)
+            
+        elif operation == "remove":
+            e = int(command[1])
+            mylist.remove(e)
+            
+        elif operation == "append":
+            e = int(command[1])
+            mylist.append(e)
+            
+        elif operation == "sort":
+            mylist.sort()
+            
+        elif operation == "pop":
+            mylist.pop()
+            
+        elif operation == "reverse":
+            mylist.reverse()
